@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>
+            Demo: Nested function
+        </h1>
+        <script>
+            function showmessage(firstname){
+                function sayhello(){
+                    alert("Hello" + firstname);
+                }
+                return sayhello();
+            }
+            showmessage("Steve");
+        </script>
+    </body>
+</html>

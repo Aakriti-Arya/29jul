@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            document.write("<h3>" + Local localStorage.length + "</h3>")
+            document.write("<h3> Hi" + localStorage.Username + " from " + localStorage.country + "</h3>")
+            document.write("<h3> Hi" + sessionStorage.Username + "</h3>")
+            document.write("Key(0)" + localStorage.key(0) )
+            document.write("<h4> get value using getitem()" + localStorage.getItem("Username") + "</h4>")
+            document.write("<h4> get value using getitem(localStorage.key(0)")
+            localStorage.removeItem("color")
+            document.write("<h4> after removing color from local storage" + localStorage.length + "</h4>")
+            document.write("<h4> color " + localStorage.getItem('color') + "</h4>")
+        </script>
+    </body>
+</html>

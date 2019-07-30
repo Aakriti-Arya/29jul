@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p> This is a p element.</p>
+        <p id="demo">This is also a p element with id = demo</p>
+        <p class="example">This is also a p element</p>
+        <p class="example">Click the button to add the background color to the fisrt p element in  the dsocument.</p>
+        <button onclick="myfunction()">Try It</button>
+        <script>
+            function myfunction(){
+                document.querySelector("p").style.background = "skyblue";
+                document.querySelector("p.example").style.background = "limegreen";
+                document.querySelector("#demo").innerHTML = "Hello World";
+            }
+        </script>
+
+        <div>
+            <h3>H3 element</h3>
+            <p> I am a p element, my parent is a div element</p>
+        </div>
+        <div>
+                <h3>H3 element</h3>
+                <p> I am a p element, my parent is a div element</p>
+        </div>
+        <p>Click the button to change the background colour of first p element.</p>
+        <button onclick="myfunction1()">Try it!!</button>
+        <script>
+            function myfunction1(){
+                var x = document.querySelector("div p");
+                x.style.background = "orange";
+            }
+        </script>
+    </body>
+</html>
